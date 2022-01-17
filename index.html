@@ -1,1 +1,410 @@
 
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Page Title</title>
+
+        <style>
+
+            body
+
+{
+
+background-color:silver;
+
+} 
+
+.box
+
+{
+
+background-color:#3d4543;
+
+height:300px;
+
+width:250px;
+
+border-radius:10px;
+
+position:relative;
+
+top:0px;
+
+left:22px;
+
+box-shadow:5px 5px 5px 0px;
+
+}
+
+.display
+
+{
+
+background-color:#222;
+
+width:220px;
+
+position:relative;
+
+left:13px;
+
+top:20px;
+
+height:40px;
+
+}
+
+.display input
+
+{
+
+position:relative;
+
+left:2px;
+
+top:2px;
+
+height:35px;
+
+color:black;
+
+background-color:#bccd95;
+
+font-size:21px;
+
+text-align:right;
+
+}
+
+.keys
+
+{
+
+position:relative;
+
+top:15px;
+
+}
+
+.button
+
+{
+
+width:40px;
+
+height:30px;
+
+border:none;
+
+border-radius:8px;
+
+margin-left:17px;
+
+cursor:pointer;
+
+border-top:2px solid transparent;
+
+background-position:bllack;
+
+color:white;
+
+}
+
+.button.gray
+
+{
+
+color:white;
+
+background-color:black;
+
+border-bottom:black 2px solid;
+
+border-top:2px #6f6f6f solid;
+
+box-shadow:0px 5px 2px rgb(0,0,0,0.8);
+
+}
+
+.button.pink
+
+{
+
+color:white;
+
+background-color: rgb(0,0,0,0.9);
+
+border-bottom:black 2px solid;
+
+box-shadow:0px 5px 2px rgb(0,0,0,0.8);
+
+}
+
+.button.black
+
+{
+
+color:white;
+
+background-color:black;
+
+border-bottom:black 2px solid;
+
+border-top:2px 303030 solid;
+
+box-shadow:0px 9px 2px rgb(0,0,0,0.7);
+
+}
+
+.button.pallavi
+
+{
+
+color:white;
+
+background-color:red;
+
+border-bottom:black 2px solid;
+
+border-top:2px 303030 solid;
+
+box-shadow:0px 3px 2px rgb(0,0,0,0.7);
+
+}
+
+.button.orange
+
+{
+
+color:white;
+
+background-color:green;
+
+border-bottom:black 2px solid;
+
+border-top:2px FF9933 solid;
+
+box-shadow:0px 4px 2px rgb(0,0,0,0.8);
+
+}
+
+.pallavi:hover{
+
+    box-shadow:0px 0px 0px rgb(0,0,0,0.8);
+
+};
+
+.pink:hover{
+
+    box-shadow:0px 0px 0px rgb(0,0,0,0.8);
+
+};
+
+.black:hover{
+
+    box-shadow:0px 0px 0px rgb(0,0,0,0.8);
+
+};
+
+.gray:hover{
+
+    box-shadow:0px 0px 0px rgb(0,0,0,0.8);
+
+};
+
+.ayush:active{
+
+    box-shadow:0px 0px 0px rgb(0,0,0,0.8);
+
+};
+
+.pink:active{
+
+    box-shadow:0px 0px 0px rgb(0,0,0,0.8);
+
+};
+
+.black:active{
+
+    box-shadow:0px 0px 0px rgb(0,0,0,0.8);
+
+};
+
+.gray:active{
+
+    box-shadow:0px 0px 0px rgb(0,0,0,0.8);
+
+};
+
+p
+
+{
+
+line-height:10px;
+
+}
+
+        </style>
+
+        <script>
+
+          function c(val)
+
+{
+
+document.getElementById("d").value=val;
+
+}
+
+function v(val)
+
+{
+
+document.getElementById("d").value+=val;
+
+}
+
+function e() 
+
+{ 
+
+try 
+
+{ 
+
+  c(eval(document.getElementById("d").value)) 
+
+} 
+
+catch(e) 
+
+{
+
+  c('Error') 
+
+} 
+
+}  
+
+        </script>
+
+    </head>
+
+    <body>
+
+    
+
+<!--Here making the the boxes-->
+
+        <div class="box">
+
+<div class="display"><input type="text" readonly size="14" id="d"></div>
+
+<div class="keys">
+
+<!--Here creating the button for square-->
+
+    <p><input type="button" class="button gray" 
+
+    value="x²" onclick='v("**2")''>
+
+<!--Here creating the button for cube-->
+
+    <input type="button" class="button gray" 
+
+    value="x³" onclick='v("**3")''>
+
+<!--Here creating the button for square-->
+
+    <input type="button" class="button gray" value="**" onclick='v("**")'>
+
+<!--Here creating the button for division-->
+
+    <input type="button" class="button pink" 
+
+    value="/" onclick='v("/")'></p>
+
+<!--Here creating the button for 7-->
+
+    <p><input type="button" class="button black" 
+
+    value="7" onclick='v("7")'>
+
+<!--Here creating the button for 8-->        
+
+    <input type="button" 
+
+    class="button black" value="8" onclick='v("8")'>
+
+<!--Here creating the button for 9--> 
+
+    <input type="button" class="button black" value="9" 
+
+    onclick='v("9")'>
+
+<!--Here creating the button for multiply-->
+
+    <input type="button" 
+
+    class="button pink" value="*" onclick='v("*")'></p>
+
+<!--Here creating the button for 4--> 
+
+    <p><input type="button" class="button black" 
+
+    value="4" onclick='v("4")'>
+
+<!--Here creating the button for 5-->
+
+    <input type="button"
+
+    class="button black" value="5" onclick='v("5")'>
+
+ <!--Here creating the button for 6-->   
+
+    <input type="button" class="button black" value="6" 
+
+    onclick='v("6")'>
+
+ <!--Here creating the button for substract-->       
+
+    <input type="button" 
+
+    class="button pink" value="-" onclick='v("-")'></p>
+
+    <p><input type="button" class="button black" 
+
+    value="1" onclick='v("1")'><input type="button" 
+
+    class="button black" value="2" onclick='v("2")'>
+
+    <input type="button" class="button black" value="3" 
+
+    onclick='v("3")'><input type="button" 
+
+    class="button pink" value="+" onclick='v("+")'></p>
+
+    <p><input type="button" class="button black" 
+
+    value="0" onclick='v("0")'><input type="button" 
+
+    class="button black" value="." onclick='v(".")'>
+
+    <input type="button" class="button pallavi" value="C" 
+
+    
+
+    onclick='c("")'><input type="button" 
+
+    class="button orange" value="=" onclick='e()'></p>
+
+</div>
+
+</div>
+
+    </body>
+
+</html>
